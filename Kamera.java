@@ -33,7 +33,15 @@ public class Kamera
     
     public void setMegapixel(int neuMegapixel)
     {
-        megapixel = neuMegapixel;
+        if ((neuMegapixel >=1) && (neuMegapixel <=200))
+        {
+            megapixel = neuMegapixel;
+        }
+        else
+        {
+            System.out.println("Megapixel Anzahl nicht gültig");
+            megapixel = 20;
+        }
     }
     
     public void setBlitz(boolean neuBlitz)
