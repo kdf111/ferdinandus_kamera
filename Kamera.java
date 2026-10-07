@@ -18,4 +18,19 @@ public class Kamera
     {
         return blitz;
     }
+    
+    public void setMarke(String neuMarke)
+    {
+        marke = neuMarke;
+    }
+    
+    public void setMegapixel(int neuMegapixel)
+    {
+        megapixel = neuMegapixel;
+    }
+    
+    public void setBlitz(boolean neuBlitz)
+    {
+        blitz = neuBlitz;
+    }
 }
