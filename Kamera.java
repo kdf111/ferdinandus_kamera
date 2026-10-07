@@ -3,6 +3,13 @@ public class Kamera
     private String  marke;
     private int     megapixel;
     private boolean blitz;
+    
+    public Kamera (String neuMarke, int neuMegapixel, boolean neuBlitz)
+    {
+        setMarke(neuMarke);
+        setMegapixel(neuMegapixel);
+        setBlitz(neuBlitz);
+    }
         
     public String getMarke()
     {
