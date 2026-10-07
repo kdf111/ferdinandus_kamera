@@ -40,4 +40,9 @@ public class Kamera
     {
         blitz = neuBlitz;
     }
+    
+    public void printKamera()
+    {
+        System.out.println(marke + " Kamera: " + megapixel + " Megapixel - " + blitz);
+    }
 }
