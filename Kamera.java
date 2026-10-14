@@ -51,6 +51,14 @@ public class Kamera
     
     public void printKamera()
     {
-        System.out.println(marke + " Kamera: " + megapixel + " Megapixel - " + blitz);
+        if(blitz == true)
+        {
+            System.out.println(marke + " Kamera: " + megapixel + " Megapixel - " + "Mit Blitz ausgestattet");
+        }
+        
+        else
+        {
+            System.out.println(marke + " Kamera: " + megapixel + " Megapixel - " + "Hat keinen Blitz");
+        }
     }
 }

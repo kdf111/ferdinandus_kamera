@@ -8,9 +8,22 @@ import org.junit.jupiter.api.Test;
 
 public class KameraTest
 {
-    /* name = Sony
+    @Test
+    public void test_print_blitz()
+    {
+        Kamera a;
+        Kamera b;
+        
+        a = new Kamera("Sony", 50, true);
+        b = new Kamera("Canon", 80, false);
+        a.printKamera();
+        //Sony Kamera: 50 Megapixel - Mit Blitz ausgestattet
+        b.printKamera();
+        //Canon Kamera: 80 Megapixel - Hat keinen Blitz
+    }
+    /* name =      Sony
        megapixel = 0
-       blitz = true
+       blitz =     true
        ->Fehler
     */
     @Test
@@ -22,9 +35,9 @@ public class KameraTest
     }
     
     /*
-     * name = Canon
+     * name =      Canon
      * megapixel = 100
-     * blitz = true
+     * blitz =     true
      */
     @Test
     public void test_megapixel_ok()
@@ -35,9 +48,9 @@ public class KameraTest
     }
     
     /*
-     * name = Canon
+     * name =      Canon
      * megapixel = 500
-     * blitz = true
+     * blitz =     true
      * -> Fehler
      */
     @Test
