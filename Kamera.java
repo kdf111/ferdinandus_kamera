@@ -4,11 +4,11 @@ public class Kamera
     private int     megapixel;
     private boolean blitz;
     
-    public Kamera (String neuMarke, int neuMegapixel, boolean neuBlitz)
+    public Kamera (String marke, int megapixel, boolean blitz)
     {
-        setMarke(neuMarke);
-        setMegapixel(neuMegapixel);
-        setBlitz(neuBlitz);
+        setMarke(marke);
+        setMegapixel(megapixel);
+        setBlitz(blitz);
     }
         
     public String getMarke()
@@ -26,27 +26,27 @@ public class Kamera
         return blitz;
     }
     
-    public void setMarke(String neuMarke)
+    public void setMarke(String marke)
     {
-        marke = neuMarke;
+        this.marke = marke;
     }
     
-    public void setMegapixel(int neuMegapixel)
+    public void setMegapixel(int megapixel)
     {
-        if ((neuMegapixel >=1) && (neuMegapixel <=200))
+        if ((megapixel >=1) && (megapixel <=200))
         {
-            megapixel = neuMegapixel;
+            this.megapixel = megapixel;
         }
         else
         {
             System.out.println("Megapixel Anzahl nicht gültig");
-            megapixel = 20;
+            this.megapixel = 20;
         }
     }
     
-    public void setBlitz(boolean neuBlitz)
+    public void setBlitz(boolean blitz)
     {
-        blitz = neuBlitz;
+        this.blitz = blitz;
     }
     
     public void printKamera()
