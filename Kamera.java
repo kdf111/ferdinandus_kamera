@@ -61,4 +61,37 @@ public class Kamera
             System.out.println(marke + " Kamera: " + megapixel + " Megapixel - " + "Hat keinen Blitz");
         }
     }
+    
+    public String getLand()
+    {
+        if(marke.contains(" "))
+        {
+            int pos;
+            pos = marke.indexOf(" ");
+            return marke.substring(0, pos);
+        }
+        
+        else
+        {
+            System.out.println("Kein Land angegeben");
+            return null;
+        }
+        
+    }
+    
+    public String getMarkenName()
+    {
+        if(marke.contains(" "))
+        {
+            int pos;
+            pos = marke.indexOf(" ");
+            return marke.substring(pos+1);
+        }
+        
+        else
+        {
+            System.out.println("Unvollständige Angabe");
+            return null;
+        }
+    }
 }

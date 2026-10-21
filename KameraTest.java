@@ -60,4 +60,28 @@ public class KameraTest
         k = new Kamera("Canon", 500, true);
         assertEquals(20, k.getMegapixel());
     }
+    
+    @Test
+    public void test_getLandOK()
+    {
+        Kamera a;
+        Kamera b;
+        
+        a = new Kamera("Japan Sony", 90, true);
+        b = new Kamera("Deutschland Leica", 100, true);
+        assertEquals("Japan", a.getLand());
+        assertEquals("Deutschland", b.getLand());
+    }
+    
+    @Test
+    public void test_getLandFalsch()
+    {
+        Kamera a;
+        Kamera b;
+        
+        a = new Kamera("Sony", 90, true);
+        b = new Kamera("Leica", 100, true);
+        assertEquals(null, a.getLand());
+        assertEquals(null, b.getLand());
+    }
 }
